@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+    body {
+        background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQBAQMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABAYF/8QAGxABAQEBAQEBAQAAAAAAAAAAAAECERIDMSH/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMABAUH/8QAGhEBAQEBAQEBAAAAAAAAAAAAAAECERIDIf/aAAwDAQACEQMRAD8A8IAs+jPVhQpqFFWA0ZmPBGFgxjwwlMwmh4SHgUKeKZJDwqVUyplPKmSpaVz+KZJlTJalo8PCZ/VIVOjDQIYgDGYWGMAgx5WAQNFIDCDHjMzCPWZmYevLgYF0oHAv4YBVhWGgJ4zNwYykaGAWE0PCQ8Clp8qZTyrktTtUyrlLKuSVHVUypkmVclqFpsqQuYpISp2tDRoaAToNw0YDSlYWY8pWEBUlBhBlJQYWHo9BmZuj15rjWH4Fi/U5U+BxThaPVJScYwCrKDDxhPKAxmgiaGhYfIFp8q5TzFckqeqplbKeVcwlc+qpmK5hMxXMTtc2tGzFJAzDyE6ldNIMNIMgdL6LIJuBwOjNBwLDcCwenmiAbgN1SaABYeqTQALD03oOMLN0fbz3C2K2BYrKWVKwtithbDSqyp2F4rYXh5VZU2NxhPKDCA9How8LDRmqmVcRLK2CVHVWxFsRLEdGInXJvSmItmExlbMStcm9jmHkHMPMp2oXYSDw3GL0vsvAsPxrG6abT4By0eqTRaXh6Wt1WaKAsPTzRWEG6b0zMw9b0+LcluV7klypKM0lYWxW5LcmlVmkrktithbDyqzSXA4rwvDyqTROBw9jcHp/RZDSNIaRmujZWwllbELUNVf5x04iPzjp+cR1XD9NK4i2cl+eV8xG1wb+jZh5BkPMp2ue/QnG4fgcDoTZOBYelrdUmyUtNS0eqzZaWmpayk0FKalFSaYGBum9CwM3R9Pn2FsWuS3J5oZpG5Jcr3IXKkqs0hckuV7ktyeVSaQuQ4t5LcnlVmkuBxXy1yJvaXDSHmTTI9a7JnK/zyGc/wBX+eSWo73+KfOOr55R+cdPziOq8767X+eV85T+cXiFrzvptpB4aMnaj7KFPS0OjNEpaeko9PNEpKfRKKs0WkpqWitNBS0aW0eqTTdDrWg3T+hZgbrek7kly6Lkty00M057ktjouSXKkqk0hcluV7ktypKebQuS+V7kvk8qk2jct5VuW8m6PtKZNMqTJpluhfoTOV8ZDOVswlrn39DfPK/zhMRXES1XF9NL4WyjlXKNcW6pGCMSo9GloltAZS0lNSWsrKWkprSWj1XNLSWjaS1urStaW1rS2m6pKPQ6Fodbpum6xes3W66bkLle5LcklLNoXJLle5Lcqymm0Lktyvcl8qSnm0bkvle5L5UlPNo3LeVblvI9H2lMmmTzJpG6S7DOVMwJFMwtR1o2YrmEzFMp1zb0pDz8JDxOubVNKPSj0lTYtboWlYuiWmtJaykLanabVTtFXNC0lo2ktZWVrS2taW1lYPQ6XodE3T9YnWZuvsXJblawtiWah6RuS+VrC2LSm9I3JblawtypDekeB5VuQsUlH2nch5Usbhh9J+RkPxpALdBIeRpDSBU9aGQ8CQ8hKjqjDQsGEqNMwMnSNaS0Q0DQtpLR0S1lIFqVprf4nqsrkNUlraJaKsa0lrWltZSDaHQ6HWMbol6zM9HSVmRy5gsLWZWGKFZlYxaXjMpkwWNxmPRbjcZgLTcNGZqSjDMxKloYLMnU6zMxCgXTMDROp6FmPErf4noWZWJ6TrMK0JS1mZSMAMxhBmZn/9k=");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+    table {
+        border: 2px solid #353A46;
+        background-color: #3ABAF1;
+        margin-top: 100px;
+        padding: 20px;
+    }
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 8px 10px;
+        border: 2px solid #ccc;
+        margin: 5px 0;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    input[type=submit] {
+        background-color: #1C94C8;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    input[type=submit]:hover {
+        background-color: #1B7AAA;
+    }
+</style>
+</head>
+<body>
+<center>
+    <form method="post" action="login.php">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align:center; background-color:#33A8DB; padding:10px; color:white;">
+                    <h2>Login</h2>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" rowspan="5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24aqQ1nBvgGQTPBh3_CrqcH6kvZZVdF5Oxg&s" />
+                </td>
+                <td><label for="userusuario">Usuario:</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="userusuario" name="userusuario" required /></td>
+            </tr>
+            <tr>
+                <td><label for="userpassword">Password:</label></td>
+            </tr>
+            <tr>
+                <td><input type="password" id="userpassword" name="userpassword" required /></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Ingresar" /></td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>
